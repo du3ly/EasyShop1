@@ -1,5 +1,4 @@
 <jsp:include page="/share/header.jsp" />
-<jsp:include page="/share/left_column_all.jsp" />
 
 <!-- begin middle column -->
 
@@ -8,20 +7,15 @@
 
 <h1>Your invoice</h1>
 
-<table>
-  <tr>
-    <th>Date</th>
-    <td>${invoice.invoiceDateDefaultFormat}</td>
-    <td></td>
-  </tr>
-  <tr>
-      <th class="top">Ship To</th>
-    <td>${user.addressHTMLFormat}</td>
-    <td></td>
-  </tr>
-  <tr>
-      <td colspan="3"><hr></td>
-  </tr>
+    <h3>Date</h3> 
+    ${invoice.invoiceDateDefaultFormat}
+
+    <h3>Ship To</h3> 
+    ${user.addressHTMLFormat}
+    
+    </br>
+  <table class="table">
+
   <tr>
       <th>Qty</th>
       <th>Description</th>
@@ -54,5 +48,5 @@
 </section>
 
 <!-- end middle column -->
-
+<hr>
 <jsp:include page="/share/footer.jsp" />
