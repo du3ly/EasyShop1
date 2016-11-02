@@ -1,7 +1,10 @@
-<jsp:include page="/share/header.jsp" />
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<!-- <jsp:include page="/share/left_column_home.jsp" /> -->
-    
+<%-- 
+    Document   : index
+    Created on : Oct 31, 2016, 9:33:51 PM
+    Author     : duely
+--%>
+<%@include file="/WEB-INF/views/template/header.jsp" %>
+
     	<!-- Slide Show -->
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
@@ -12,15 +15,15 @@
 		</ol>
 
 		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
+                <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="images/coach-bag1.jpg" alt="img1">
+                        <img src="<c:url value='/images/coach-bag1.jpg'/>" alt="img1">
                     </div>
                     <div class="item">
-                        <img src="images/backpacks-1.jpg" alt="img1">
+                        <img src="/images/backpacks-1.jpg" alt="img2">
                     </div>
                     <div class="item">
-                        <img src="images/men_travelbag.jpg" alt="img1">
+                        <img src="/images/men_travelbag.jpg" alt="img3">
                     </div>	
 		</div>
 
@@ -53,7 +56,7 @@
 
       <hr>
 
-      <jsp:include page="/share/footer.jsp" />
+      <%@include file="/WEB-INF/views/template/footer.jsp" %>
     </div> <!-- /container -->
 
 
@@ -62,6 +65,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../EasyShop/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="<c:url value="/bootstrap-3.3.7-dist/js/bootstrap.min.js" />"></script>
   </body>
 </html>

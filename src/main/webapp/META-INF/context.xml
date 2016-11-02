@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context path="/EasyShop"> 
 
-<Resource name="jdbc/shopDB" type="javax.sql.DataSource" auth="Container" 
-            driverClassName="com.mysql.jdbc.Driver" 
-            url="jdbc:mysql://localhost:3306/shop?autoReconnect=true" 
-            username="root" password="sesame" 
-            logAbandoned="true" 
-            removeAbandoned="true" removeAbandonedTimeout="60" 
-            maxActive="100" maxIdle="30" maxWait="10000" />
-
   <!-- the tsai database that contains admin usernames and passwords -->
   <Resource name="jdbc/tsaiDB" type="javax.sql.DataSource" auth="Container" 
             driverClassName="com.mysql.jdbc.Driver" 
@@ -18,22 +10,4 @@
             removeAbandoned="true" removeAbandonedTimeout="60" 
             maxActive="100" maxIdle="30" maxWait="10000" />
   
-  <Realm dataSourceName="jdbc/murachDB" localDataSource="true" 
-         className="org.apache.catalina.realm.DataSourceRealm" 
-         userTable="UserPass" userRoleTable="UserRole" 
-         userNameCol="Username" roleNameCol="Rolename" userCredCol="Password" 
-         debug="99" />
 </Context>
-
-
- <!-- <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xmlns="http://java.sun.com/xml/ns/javaee"
- xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
-          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
- id="WebApp_ID" version="3.0">
- 
- <display-name>Spring MVC ShoppingCart</display-name>
-  
- 
-</web-app>
--->

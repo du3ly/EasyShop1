@@ -1,61 +1,75 @@
-package com.se452.easyshop.business;
+package com.se452.easyshop.model;
 /**
  *
  * @author Camille
  */
 
-import java.text.NumberFormat;
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-public class Product implements Serializable {
-   
-    private Long productId;    
-    private String model;
-    private String description;
-    private double price;
+public class Product {
+    
+    private int productId;
+    private String productName;
+    private String productBrand;
+    private String productDescription;
+    private String productCategory;
+    private String productGender;
+    private double productPrice;
 
     public Product() {}
-
-    public Long getId() {
+    
+    public int getProductId() {
         return productId;
     }
 
-    public void setId(Long productId) {
+    public void setProductId(int productId) {
         this.productId = productId;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public String getModel() {
-        return model;
+    public String getProductName() {
+        return productName;
+    }
+    
+    public String getProductBrand() {
+        return productBrand;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setProductBrand(String productBrand) {
+        this.productBrand = productBrand;
     }
 
-    public String getDescription() {
-        return description;
-    }
-     public void setPrice(double price) {
-        this.price = price;
+    public void setProductDescription(String productDescription) {
+        this.productDescription = productDescription;
     }
 
-    public double getPrice() {
-        return price;
+    public String getProductDescription() {
+        return productDescription;
     }
-    public String getPriceCurrencyFormat() {
-        NumberFormat currency = NumberFormat.getCurrencyInstance();
-        return currency.format(price);
+    
+    public String getProductCategory() {
+        return productCategory;
     }
 
-    public String getImageURL() {
-        String imageURL = "/EasyShop/images/" + model + ".jpg";
-        return imageURL;
+    public void setProductCategory(String productCategory) {
+        this.productCategory = productCategory;
+    }
+    
+    public String getProductGender() {
+        return productGender;
+    }
+
+    public void setProductGender(String productGender) {
+        this.productGender = productGender;
+    }
+    
+     public void setProductPrice(double productPrice) {
+        this.productPrice = productPrice;
+    }
+
+    public double getProductPrice() {
+        return productPrice;
     }
  
 }

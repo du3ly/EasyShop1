@@ -1,6 +1,5 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
 <html>
@@ -38,8 +37,7 @@
           <ul class="nav navbar-nav">
               <li><a href="<c:url value='/header_women' />">WOMEN</a></li>
               <li><a href="<c:url value='/header_men' />">MEN</a></li>
-            <!-- <li><a href="<c:url value='/catalog' />">Browse Catalog</a></li> -->
-            <!-- <li><a href="<c:url value='/email' />">Email List</a></li> -->
+              <li><a href="<c:url value='/productList' />">ALL COLLECTIONS</a></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
