@@ -1,14 +1,17 @@
+<%-- 
+    Document   : productInventory
+    Created on : Nov 5, 2016, 3:58:30 PM
+    Author     : duely
+--%>
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@include file="/WEB-INF/views/template/header.jsp"%>
 
 <script>
     $(document).ready(function(){
-        var searchCondition = '${searchCondition}';
 
         $('.table').DataTable({
-            "lengthMenu": [[1,2,3,5,10,-1], [1,2,3,5,10, "All"]],
-            "oSearch": {"sSearch": searchCondition}
+            "lengthMenu": [[1,2,3,5,10,-1], [1,2,3,5,10, "All"]]
         });
     });
 
@@ -17,9 +20,9 @@
 <div class="container-wrapper">
     <div class="container">
         <div class="page-header">
-            <h1>All Products</h1>
+            <h1>Product Inventory Page</h1>
 
-            <p class="lead">Checkout all the awesome products available now!</p>
+            <p class="lead">This is the product inventory page!</p>
         </div>
 
         <table class="table table-striped table-hover">
@@ -50,5 +53,8 @@
                 </tr>
             </c:forEach>
         </table>
-        
-<%@include file="/WEB-INF/views/template/footer.jsp" %>
+
+        <a href="<spring:url value="/admin/productInventory/addProduct" />" class="btn btn-primary">Add Product</a>
+
+        <%@include file="/WEB-INF/views/template/footer.jsp" %>
+
