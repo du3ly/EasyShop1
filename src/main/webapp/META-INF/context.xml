@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/EasyShop"> 
-
+<Context path="/EasyShop">
   <!-- the tsai database that contains admin usernames and passwords -->
-  <Resource name="jdbc/tsaiDB" type="javax.sql.DataSource" auth="Container" 
+  <!--  <Resource name="jdbc/tsaiDB" type="javax.sql.DataSource" auth="Container" 
             driverClassName="com.mysql.jdbc.Driver" 
             url="jdbc:mysql://localhost:3306/tsai?autoReconnect=true" 
             username="root" password="sesame" 
             logAbandoned="true" 
             removeAbandoned="true" removeAbandonedTimeout="60" 
-            maxActive="100" maxIdle="30" maxWait="10000" />
-  
+            maxActive="100" maxIdle="30" maxWait="10000" />-->
 </Context>
