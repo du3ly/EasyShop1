@@ -11,7 +11,7 @@
     <div class="login-container">
         <div id="login-box">
 
-            <h2>Login</h2>
+            <h2></h2>
 
             <c:if test="${not empty msg}">
                 <div class="msg">${msg}</div>
@@ -37,7 +37,8 @@
 
         </div>
     </div>
+    <%@include file="/WEB-INF/views/template/footer.jsp" %>
 </div>
 
-<%@include file="/WEB-INF/views/template/footer.jsp" %>
+
 
