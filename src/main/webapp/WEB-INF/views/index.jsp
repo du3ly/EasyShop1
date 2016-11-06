@@ -17,13 +17,13 @@
 		<!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="<c:url value='/images/coach-bag1.jpg'/>" alt="img1">
+                        <img class="first-slide home-image" src="<c:url value='/images/coach-bag1.jpg'/>" alt="img1">
                     </div>
                     <div class="item">
-                        <img src="/images/backpacks-1.jpg" alt="img2">
+                        <img class="second-slide home-image" src="<c:url value='/images/backpacks.jpg'/>" alt="img2">
                     </div>
                     <div class="item">
-                        <img src="/images/men_travelbag.jpg" alt="img3">
+                        <img class="third-slide home-image" src="<c:url value='/images/men_travelbag.jpg'/>" alt="img3">
                     </div>	
 		</div>
 

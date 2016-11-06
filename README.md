@@ -7,3 +7,6 @@ Spring MVC, MySQL, Hibernate, Netbeans
     
 Broken:
    - Uploading pictures (Might need to create a bean in applicationContext)
+   
+Nice to have:
+   - Validations

@@ -42,6 +42,7 @@
           
           <ul class="nav navbar-nav navbar-right">
               <li><a href="<c:url value='/order/showCart'/>"> <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+              <li><a href="<c:url value='/admin'/>">ADMIN</a></li>
               <li><a href="<c:url value='/user_login'/>">SIGN IN</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
