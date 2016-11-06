@@ -34,12 +34,10 @@
         
         <div class="form-group">
             <label for="category">Category</label> <form:errors path="productCategory" cssStyle="color: #ff0000;" />
-            <select name="category">
-                <option value="Shoes" selected>Shoes</option>
-                <option value="Tops">Tops</option>
-                <option value="Bottoms">Bottoms</option>
-                <option value="Bags">Bags</option>
-            </select>
+            <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="Shoes" />Shoes</label>
+            <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="Tops" />Tops</label>
+            <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="Bottoms" />Bottoms</label>
+            <label class="checkbox-inline"><form:radiobutton path="productCategory" id="category" value="Bags" />Bags</label>
         </div>
         
         <div class="form-group">
@@ -51,6 +49,11 @@
         <div class="form-group">
             <label for="price">Price</label>  <form:errors path="productPrice" cssStyle="color: #ff0000;" />
             <form:input path="productPrice" id="price" class="form-Control"/>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label" for="productImage">Upload Picture</label>
+            <form:input id="productImage" path="productImage" type="file" class="form:input-large" />
         </div>
 
         <br><br>

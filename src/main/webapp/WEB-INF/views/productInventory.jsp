@@ -48,8 +48,11 @@
                     <td>${product.productCategory}</td>
                     <td>${product.productGender}</td>
                     <td>${product.productPrice} USD</td>
-                    <td><a href="<spring:url value="/productList/viewProduct/${product.productId}" />"
-                    ><span class="glyphicon glyphicon-info-sign"></span></a></td>
+                    <td>
+                      <a href="<spring:url value="/productList/viewProduct/${product.productId}" />"><span class="glyphicon glyphicon-info-sign"></span></a>
+                      <a href="<spring:url value="/admin/productInventory/deleteProduct/${product.productId}" />"><span class="glyphicon glyphicon-remove"></span></a>
+                    </td>
+                    
                 </tr>
             </c:forEach>
         </table>

@@ -31,7 +31,7 @@
         <br><br>
 
         <h3>
-            <a href="<c:url value="/admin/customer" />" >Customer Managementy</a>
+            <a href="<c:url value="/admin/customer" />" >Customer Management</a>
         </h3>
 
         <p>Here you can view the customer information!</p>
