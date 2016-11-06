@@ -17,8 +17,7 @@
             </p>
         </div>
         
-        <form:form action="${pageContext.request.contextPath}/admin/productInventory/addProduct" method="post" 
-                   commandName="product">
+        <form:form action="${pageContext.request.contextPath}/admin/productInventory/addProduct" method="post" commandName="product">
             <div class="form-group">
                 <label for="name">Product</label> 
                 <form:input path="productName" id="name" class="form-control" />

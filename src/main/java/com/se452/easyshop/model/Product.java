@@ -26,8 +26,6 @@ public class Product {
     private String productGender;
     private double productPrice;
     
-
-    
     public int getProductId() {
         return productId;
     }
@@ -83,5 +81,9 @@ public class Product {
     public double getProductPrice() {
         return productPrice;
     }
-        
+
+    public MultipartFile getProductImage() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+     
 }
