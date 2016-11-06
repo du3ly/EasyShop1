@@ -26,8 +26,7 @@ public class Product {
     private String productGender;
     private double productPrice;
     
-    @Transient
-    private MultipartFile productImage;
+
     
     public int getProductId() {
         return productId;
@@ -83,14 +82,6 @@ public class Product {
 
     public double getProductPrice() {
         return productPrice;
-    }
-
-    public MultipartFile getProductImage() {
-        return productImage;
-    }
-
-    public void setProductImage(MultipartFile productImage) {
-        this.productImage = productImage;
     }
         
 }
