@@ -35,15 +35,12 @@
  
         <div id="navbar" class="navbar-collapse collapse">  
           <ul class="nav navbar-nav">
-              <li><a href="<c:url value='/header_women' />">WOMEN</a></li>
-              <li><a href="<c:url value='/header_men' />">MEN</a></li>
-              <li><a href="<c:url value='/productList' />">ALL COLLECTIONS</a></li>
+              <li><a href="<c:url value='/productList' />">ALL PRODUCTS</a></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
               <li><a href="<c:url value='/order/showCart'/>"> <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-              <li><a href="<c:url value='/admin'/>">ADMIN</a></li>
-              <li><a href="<c:url value='/user_login'/>">SIGN IN</a></li>
+              <li><a href="<c:url value='/admin'/>">SIGN IN</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
