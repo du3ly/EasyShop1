@@ -54,9 +54,9 @@
                 <a href="<spring:url value="/productList" />" class="btn btn-default">Continue Shopping</a>
             </div>
         </section>
+        <script src="<c:url value="/bootstrap-3.3.7-dist/js/controller.js" /> "></script>
+        <%@include file="/WEB-INF/views/template/footer.jsp" %>    
     </div>
             
-    <script src="<c:url value="/bootstrap-3.3.7-dist/js/controller.js" /> "></script>
-    <%@include file="/WEB-INF/views/template/footer.jsp" %>
 </div>
 

@@ -1,4 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 
@@ -41,7 +42,7 @@
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="<c:url value='/order/showCart'/>"> <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+              <li><a href="<spring:url value="/cart" />"> <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
               <li><a href="<c:url value='/admin'/>">SIGN IN</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
