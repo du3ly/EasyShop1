@@ -27,7 +27,7 @@ and open the template in the editor.
 }
 
 .table th {
-    text-align: center;
+    text-align: left;
 }
 
 .login-box {
