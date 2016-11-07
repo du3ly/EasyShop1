@@ -6,7 +6,7 @@ E-Commerce Website
 Spring MVC, MySQL, Hibernate, Netbeans    
     
 Broken:
-   - Populating products to the Shopping Cart
+   - None at the moment
    
 Nice to have:
    - Validations
