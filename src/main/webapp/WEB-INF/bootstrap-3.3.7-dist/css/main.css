@@ -1,0 +1,28 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 6, 2016, 10:53:45 PM
+    Author     : duely
+*/
+
+.table {
+    table-layout: fixed;
+    overflow: auto;
+}
+
+.table th {
+    text-align: center;
+}
+
+.table td {
+    text-align: center;
+    background: whitesmoke;
+    
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+}

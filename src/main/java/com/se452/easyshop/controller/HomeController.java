@@ -4,7 +4,7 @@ import com.se452.easyshop.dao.ProductDao;
 import com.se452.easyshop.model.Product;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Paths;
+import java.nio.file.Path;
 import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;

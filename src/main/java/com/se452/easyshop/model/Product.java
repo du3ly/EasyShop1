@@ -26,6 +26,9 @@ public class Product {
     private String productGender;
     private double productPrice;
     
+    @Transient
+    private MultipartFile productImage;
+    
     public int getProductId() {
         return productId;
     }
@@ -83,7 +86,11 @@ public class Product {
     }
 
     public MultipartFile getProductImage() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return productImage;
+    }
+
+    public void setProductImage(MultipartFile productImage) {
+        this.productImage = productImage;
     }
      
 }
