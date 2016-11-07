@@ -14,6 +14,8 @@
     <title>EASYSHOP</title>
     <!-- Icon -->
     <link rel="icon" href="<c:url value='/images/favicon.ico'/>">
+    <!-- Angular JS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"/> </script>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<c:url value='/bootstrap-3.3.7-dist/css/bootstrap.min.css'/> ">
     <!-- Custom styles for this template -->

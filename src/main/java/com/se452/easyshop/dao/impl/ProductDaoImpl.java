@@ -1,5 +1,6 @@
-package com.se452.easyshop.dao;
+package com.se452.easyshop.dao.impl;
 
+import com.se452.easyshop.dao.ProductDao;
 import com.se452.easyshop.model.Product;
 import java.util.List;
 import org.hibernate.Query;

@@ -1,5 +1,5 @@
 <%@taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@include file="/WEB-INF/views/template/header.jsp"%>
 
 
@@ -8,15 +8,13 @@
         <div class="page-header">
             <h1>Product Detail</h1>
 
-            <p class="lead">Here is the detail information of the product!        System.out.println(path);
-            </p>
+            <p class="lead">Here is the detail information of the product!</p>
         </div>
 
-        <div class="container" ng-app = "cartApp">
+        <div class="container" ng-app="cartApp">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="<c:url value="/images/${product.productId}.png" /> " alt="image"
-                             style="width:100%"/>
+                    <img src="<c:url value="/images/${product.productId}.png" /> " alt="image" style="width:100%"/>
                 </div>
 
                 <div class="col-md-5">
@@ -36,7 +34,7 @@
                     <br>
 
                     <c:set var="role" scope="page" value="${param.role}" />
-                    <c:set var="url" scope="page" value="/product/productList" />
+                    <c:set var="url" scope="page" value="/productList" />
                     <c:if test="${role='admin'}">
                         <c:set var="url" scope="page" value="/admin/productInventory" />
                     </c:if>
@@ -45,9 +43,8 @@
                         <a href="<c:url value="${url}" />" class="btn btn-default">Back</a>
                         <a href="#" class="btn btn-warning btn-large"
                            ng-click="addToCart('${product.productId}')"><span
-                                class="glyphicon glyphicon-shopping-cart"></span>Order
-                            Now</a>
-                        <a href="<spring:url value="/customer/cart" />"
+                                class="glyphicon glyphicon-shopping-cart"></span>Order Now</a>
+                        <a href="<spring:url value="/cart" />"
                            class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span>View Cart</a>
                     </p>
                 </div>
@@ -56,5 +53,5 @@
 
 
 
-        <script src="<c:url value="/resources/js/controller.js" /> "></script>
+        <script src="<c:url value="/bootstrap-3.3.7-dist/js/controller.js" /> "></script>
         <%@include file="/WEB-INF/views/template/footer.jsp" %>
