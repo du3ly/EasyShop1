@@ -20,6 +20,7 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<c:url value='/bootstrap-3.3.7-dist/css/bootstrap.min.css'/> ">
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="<c:url value='/bootstrap-3.3.7-dist/css/main.css'/> ">
     <link rel="stylesheet" href="<c:url value='/bootstrap-3.3.7-dist/css/carousel.css'/> ">    
 </head>
 
