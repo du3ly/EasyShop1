@@ -29,4 +29,14 @@ cartApp.controller("cartCtrl", function ($scope, $http){
             $scope.refreshCart($http.get('/EasyShop/rest/cart/cartId'));
         });
     };
+    
+    $scope.calGrandTotal = function () {
+        var grandTotal=0;
+
+        for (var i=0; i<$scope.cart.cartItems.length; i++) {
+            grandTotal+=$scope.cart.cartItems[i].totalPrice;
+        }
+
+        return grandTotal;
+    };
 });
