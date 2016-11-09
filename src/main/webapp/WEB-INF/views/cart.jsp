@@ -21,12 +21,6 @@
 
         <section class="container" ng-app="cartApp">
             <div ng-controller = "cartCtrl" ng-init="initCartId('${cartId}')">
-                <div>
-                    <a class="btn btn-danger pull-left" ng-click="clearCart()"><span
-                            class="glyphicon glyphicon-remove-sign"></span>Clear Cart</a>
-                            <a href="<spring:url value="/order/${cartId}"/>" class="btn btn-success pull-right">
-                                <span class="glyphicon-shopping-cart glyphicon"></span>Checkout</a>
-                </div>
 
                 <table class="table table-hover">
                     <tr>
@@ -52,8 +46,12 @@
                         <th></th>
                     </tr>
                 </table>
-
-                <a href="<spring:url value="/product/productList" />" class="btn btn-default">Continue Shopping</a>
+                <div>
+                    <a href="<spring:url value="/order/${cartId}"/>" class="btn btn-success pull-right">
+                        <span class="glyphicon-shopping-cart glyphicon"></span>Checkout</a>
+                    <a href="<spring:url value="/product/productList" />" class="btn btn-default pull-right">Continue Shopping</a>    
+                </div>
+                    <a class="btn btn-danger" ng-click="clearCart()"><span class="glyphicon glyphicon-remove-sign"></span>Clear Cart</a>
             </div>
         </section>
         <script src="<c:url value="/bootstrap-3.3.7-dist/js/controller.js" /> "></script>

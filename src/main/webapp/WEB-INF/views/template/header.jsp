@@ -14,7 +14,7 @@
 
     <title>EASYSHOP</title>
     <!-- Icon -->
-    <link rel="icon" href="<c:url value='/images/favicon.ico'/>">
+    <link rel="shortcut icon" href="<c:url value='/images/favicon.ico'/>">
     <!-- Angular JS -->
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"/> </script>
     <!-- Bootstrap core CSS -->

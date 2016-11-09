@@ -69,9 +69,10 @@
 
         <input type="hidden" name="_flowExecutionKey" />
 
+        
         <br><br>
+        <button class="btn btn-danger" name="_eventId_cancel">Cancel</button>
         <input type="submit" value="Next" class="btn btn-default" name="_eventId_customerInfoCollected" />
-        <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
         </form:form>
 
 

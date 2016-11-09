@@ -101,9 +101,10 @@
 
                         <br><br>
                         <button class="btn btn-default" name="_eventId_backToCollectShippingDetail">Back</button>
+                        <button class="btn btn-danger" name="_eventId_cancel">Cancel</button>
                         <input type="submit" value="Submit Order" class="btn btn-default"
                                name="_eventId_orderConfirmed"/>
-                        <button class="btn btn-default" name="_eventId_cancel">Cancel</button>
+                        
                     </div>
                 </form:form>
 
