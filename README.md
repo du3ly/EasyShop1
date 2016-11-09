@@ -4,12 +4,6 @@ SE452 - Group 4
 E-Commerce Website   
     
 Spring MVC, MySQL, Hibernate, Netbeans    
-    
-Broken:
-   - None at the moment
-   
-Nice to have:
-   - Validations
 
 SQL Schema for Security   
 create table users(
