@@ -1,4 +1,4 @@
-package com.se452.easyshop.dao;
+package com.se452.easyshop.service;
 
 import com.se452.easyshop.model.Product;
 import java.util.List;
@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author duely
  */
-public interface ProductDao {
+public interface ProductService {
     
     List<Product> getProductList();
     
@@ -18,5 +18,5 @@ public interface ProductDao {
     void editProduct(Product product);
     
     void deleteProduct(Product product);
-
+    
 }

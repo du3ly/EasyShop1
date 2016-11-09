@@ -17,7 +17,7 @@
             
         </div>
         
-        <form:form action="${pageContext.request.contextPath}/admin/productInventory/editProduct" method="post" commandName="product">
+        <form:form action="${pageContext.request.contextPath}/admin/product/editProduct" method="post" commandName="product">
         <form:hidden path="productId" value="${product.productId}" />
             <div class="form-group">
                 <label for="name">Product</label> 
@@ -56,7 +56,7 @@
  
          <br><br> 
          <input type="submit" value="SUBMIT" class="btn btn-default"> 
-         <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">CANCEL</a> 
+         <a href="<c:url value="/admin/product" />" class="btn btn-default">CANCEL</a> 
         </form:form> 
 
        

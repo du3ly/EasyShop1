@@ -39,12 +39,32 @@
  
         <div id="navbar" class="navbar-collapse collapse">  
           <ul class="nav navbar-nav">
-              <li><a href="<c:url value='/productList' />">ALL PRODUCTS</a></li>
+              <li><a href="<c:url value='/product/productList' />">ALL PRODUCTS</a></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="<spring:url value="/cart" />"> <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-              <li><a href="<c:url value='/admin'/>">SIGN IN</a></li>
+              
+              <c:if test="${pageContext.request.userPrincipal.name != null}">
+                  <li><a>Welcome, ${pageContext.request.userPrincipal.name}</a></li>
+                  
+                  
+                  <c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
+                    <li><a href="<c:url value="/customer/cart"/>"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                  </c:if>
+                    
+                  <c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
+                    <li><a href="<c:url value='/admin'/>">ADMIN</a></li>
+                  </c:if>
+                    
+                  <li><a href="<c:url value="/j_spring_security_logout"/>">Logout</a></li>
+                    
+              </c:if>
+                    
+              <c:if test="${pageContext.request.userPrincipal.name == null}">
+                <li><a href="<c:url value='/register'/>">REGISTER</a></li>
+                <li><a href="<c:url value='/login'/>">LOGIN</a></li>
+              </c:if>
+                
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
