@@ -17,7 +17,7 @@
             
         </div>
         
-        <form:form action="${pageContext.request.contextPath}/admin/product/editProduct" method="post" commandName="product">
+        <form:form action="${pageContext.request.contextPath}/admin/product/editProduct" method="post" commandName="product" enctype="multipart/form-data">
         <form:hidden path="productId" value="${product.productId}" />
             <div class="form-group">
                 <label for="name">Product</label> 
@@ -52,11 +52,16 @@
                 <label for="price">Price</label>  
                 <form:input path="productPrice" id="price" class="form-Control" value="${product.productPrice}"/> 
             </div> 
+            
+            <div class="form-group">
+                <label class="control-label" for="productImage">Upload</label>
+                <form:input id="productImage" path="productImage" type="file" class="form:input-large" />
+            </div>
 
  
          <br><br> 
          <input type="submit" value="SUBMIT" class="btn btn-default"> 
-         <a href="<c:url value="/admin/product" />" class="btn btn-default">CANCEL</a> 
+         <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">CANCEL</a> 
         </form:form> 
 
        
