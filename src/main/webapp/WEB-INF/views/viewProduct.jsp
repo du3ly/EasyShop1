@@ -46,10 +46,10 @@
                             <c:if test="${pageContext.request.userPrincipal.name != null}">
                                 <a href="#" class="btn btn-warning btn-large" ng-click="addToCart('${product.productId}')"><span
                                 class="glyphicon glyphicon-shopping-cart"></span>Order Now</a>
+                            
+                                <a href="<spring:url value="/customer/cart" />"
+                                ng-app=""class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span>View Cart</a>
                             </c:if>
-                        
-                            <a href="<spring:url value="/customer/cart" />"
-                               ng-app=""class="btn btn-default"><span class="glyphicon glyphicon-hand-right"></span>View Cart</a>
                         </c:if>   
                     </p>
                 </div>
